@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.huayu.springboot.system.mapper.ProductMapper">
+  <resultMap id="BaseResultMap" type="io.huayu.springboot.system.entity.Product">
+    <id column="p_id" jdbcType="VARCHAR" property="pId" />
+    <result column="c_id" jdbcType="VARCHAR" property="cId" />
+    <result column="b_id" jdbcType="VARCHAR" property="bId" />
+    <result column="s_id" jdbcType="VARCHAR" property="sId" />
+    <result column="store_id" jdbcType="VARCHAR" property="storeId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="sell" jdbcType="INTEGER" property="sell" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="note" jdbcType="VARCHAR" property="note" />
+    <result column="traffic" jdbcType="INTEGER" property="traffic" />
+    <result column="delete" jdbcType="TINYINT" property="delete" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="updatetime" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    p_id, c_id, b_id, s_id, store_id, name, sell, status, note, traffic, delete, createtime, 
+    updatetime
+  </sql>
+
+</mapper>

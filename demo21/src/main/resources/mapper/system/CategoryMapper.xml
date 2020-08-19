@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.huayu.springboot.system.mapper.CategoryMapper">
+
+  <resultMap id="BaseResultMap" type="io.huayu.springboot.system.entity.Category">
+    <id column="c_id" jdbcType="VARCHAR" property="cId" />
+    <result column="f_c_id" jdbcType="VARCHAR" property="fCId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="image" jdbcType="VARCHAR" property="image" />
+    <result column="is_fid" jdbcType="TINYINT" property="isFid" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="rank" jdbcType="INTEGER" property="rank" />
+    <result column="delete" jdbcType="TINYINT" property="delete" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="updatetime" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    c_id, f_c_id, `name`, image, is_fid, status, rank, `delete`, createtime, updatetime
+  </sql>
+
+</mapper>

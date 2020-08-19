@@ -1,0 +1,3 @@
+${AnsiColor.BLUE}
+Hello World
+${AnsiColor.YELLOW}      :: Spring Boot ::             ${AnsiColor.WHITE}(v${spring-boot.version})

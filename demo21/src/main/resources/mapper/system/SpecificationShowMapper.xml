@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.huayu.springboot.system.mapper.SpecificationShowMapper">
+  <resultMap id="BaseResultMap" type="io.huayu.springboot.system.entity.SpecificationShow">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="p_id" jdbcType="VARCHAR" property="pId" />
+    <result column="s_id" jdbcType="VARCHAR" property="sId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, p_id, s_id
+  </sql>
+
+</mapper>

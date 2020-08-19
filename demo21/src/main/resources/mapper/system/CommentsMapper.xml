@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.huayu.springboot.system.mapper.CommentsMapper">
+  <resultMap id="BaseResultMap" type="io.huayu.springboot.system.entity.Comments">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="g_id" jdbcType="VARCHAR" property="gId" />
+    <result column="body" jdbcType="VARCHAR" property="body" />
+    <result column="delete" jdbcType="TINYINT" property="delete" />
+    <result column="iamge" jdbcType="VARCHAR" property="iamge" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_id, g_id, body, `delete`, iamge, `time`
+  </sql>
+
+</mapper>

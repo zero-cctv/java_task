@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.huayu.springboot.system.mapper.TemplateMiddleMapper">
+  <resultMap id="BaseResultMap" type="io.huayu.springboot.system.entity.TemplateMiddle">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="s_id_id" jdbcType="VARCHAR" property="sIdId" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="image" jdbcType="VARCHAR" property="image" />
+    <result column="num" jdbcType="INTEGER" property="num" />
+    <result column="weight" jdbcType="DECIMAL" property="weight" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, s_id_id, price, image, num, weight
+  </sql>
+
+</mapper>
